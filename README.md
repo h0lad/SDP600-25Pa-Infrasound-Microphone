@@ -34,9 +34,9 @@ Pin 22: SCL
 
 ![Example Measurement](hardware_setup.jpg)
 
-One ending of the differential sensor is open to sense the signal.
+One Port of the differential sensor is open to sense the signal.
 
-The second opening is connected again to a small plastic bottle which has an extremely small hole. This path very slowly follows the environmental pressure - much slower than the "high frequency" input signal. We basically notch out DC part of the signal as its difference will be zero.
+The second port is connected to a small plastic bottle which has an extremely small hole. This path very slowly follows the environmental pressure - much slower than the "high frequency" input signal. We notch out the DC part of the signal as its difference will be zero.
 
 # Limitations
 
