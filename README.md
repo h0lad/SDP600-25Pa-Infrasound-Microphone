@@ -24,15 +24,25 @@ This is an extremely sensitive infrasound microphone based on the differential p
 
 ## Hardware setup
 
+### Pin Configuration
+
 Pin 21: SDA 
 
 Pin 22: SCL
+
+### Example Box
+
+![Example Measurement](hardware_setup.jpg)
+
+One ending of the differential sensor is open to sense the signal.
+
+The second opening is connected again to a small plastic bottle which has an extremely small hole. This path very slowly follows the environmental pressure - much slower than the "high frequency" input signal. We basically notch out DC part of the signal as its difference will be zero.
 
 # Limitations
 
 The I2C clock stretching capability of the ESP32 is limited.
 
-The highest resolution you can choose is 13 Bit. Everything higher will lead to timeouts.
+The highest resolution you can choose is 13 Bit. Everything higher will cause timeouts.
 
 ## License
 
